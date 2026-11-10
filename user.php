@@ -7,7 +7,7 @@ if ($conn->connect_error) {
 
 $message = "";
 
-if (isset($_POST['add_user'])) {
+if (isset($_POST['add_users'])) {
     $name = $_POST['full_name'];
     $username = $_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
